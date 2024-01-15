@@ -1,0 +1,79 @@
+body {
+    background-color: #fffee9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    border: 2px solid black; /* Add a black outline */
+    padding: 10px; /* Add padding for better visual appearance */
+    width: 50%; /* Set the width to 50% of the screen */
+    max-width: 400px; /* Set a maximum width to ensure it doesn't exceed 400px */
+    margin: auto; /* Center the calculator horizontally */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.calculator {
+    width: 100%; /* Calculator takes 100% width of its container */
+    height: auto; /* Adjust height to fit content */
+    border: 2px solid black; /* Add a black border to the calculator */
+    border-radius: 8px; /* Add rounded corners to the calculator */
+    overflow: hidden; /* Hide overflow content (e.g., when border-radius is applied) */
+}
+
+.screen {
+    background-color: #f0f0f0; /* Add a light background color to the screen */
+    padding: 10px; /* Add padding to the screen */
+    margin-bottom: 10px; /* Add margin at the bottom for better separation */
+    border-bottom: 2px solid #ccc; /* Add a border below the screen */
+}
+
+#display {
+    width: 100%; /* Make the display input element fill the screen width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    font-size: 24px; /* Adjust font size for better visual appearance */
+    border: none; /* Remove border from the input */
+    outline: none; /* Remove outline on focus */
+    background-color: #f0f0f0; /* Match the screen background color */
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next row if needed */
+}
+
+.left-panel, .right-panel {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; /* Adjust spacing between left and right panels */
+}
+
+.row {
+    display: flex;
+    margin-bottom: 5px; /* Add some spacing between rows */
+}
+
+button {
+    /* Button styles */
+    flex: 1;
+    /* This makes buttons fill the available space in the row */
+    margin: 5px; /* Add margin around each button for spacing */
+    padding: 15px; /* Adjust button padding for better visual appearance */
+    font-size: 16px; /* Adjust font size for better visual appearance */
+    border: 1px solid black; /* Add a border to the buttons */
+    border-radius: 5px; /* Add rounded corners to the buttons */
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+button:hover {
+    /* Hover styles for all buttons */
+    background-color: #ddd;
+}
+
+button:active {
+    background-color: #ccc; /* Change color when the button is pressed */
+}
